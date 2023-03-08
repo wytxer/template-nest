@@ -28,7 +28,6 @@
       "@domains/*": ["src/domains/*"],
       "@entities/*": ["src/entities/*"],
       "@interceptors/*": ["src/interceptors/*"],
-      "@interceptors/*": ["src/interceptors/*"],
       "@guards/*": ["src/guards/*"]
     }
   },
