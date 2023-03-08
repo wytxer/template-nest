@@ -1,0 +1,56 @@
+# 微信相关配置
+wechat:
+  # 微信小程序配置
+  wechatApp:
+    appid: 'appid'
+    secret: 'secret'
+
+# 数据库配置
+db:
+  mysql:
+    host: '127.0.0.1'
+    username: ''
+    password: ''
+    database: ''
+    port: 3306
+    charset: 'utf8mb4'
+    timezone: '+08:00'
+    synchronize: false
+  redis:
+    host: '127.0.0.1'
+    port: ''
+    password: ''
+    db: 0
+
+# 限流配置
+rateLimit:
+  enable: true
+  # 限流时间
+  windowMs: 60000
+  # 限流数量
+  max: 1000
+
+# 服务配置
+server:
+  port: 9801
+  hostname: '0.0.0.0'
+  apiPrefix: '/api'
+  # 鉴权白名单
+  authWhitelist:
+    - '/api/v1/user/mockLogin'
+    - '/api/v1/user/wechatLogin'
+    - '/api/v1/user/wechatGetPhone'
+    - '/api/v1/user/logout'
+
+# JWT
+jwt:
+  secret: '9dbe4a4e-8f25-4269-9503-03008630048a'
+  # 30 天
+  expires: '30d'
+
+# cookie
+cookie:
+  key: 'template-app-test'
+  secret: '95211681-aed9-45a3-b6b1-d280deb0069e'
+  # 30 天
+  maxAge: 2592000000
